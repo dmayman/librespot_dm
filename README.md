@@ -3,6 +3,8 @@
 [![Crates.io](https://img.shields.io/crates/v/librespot.svg)](https://crates.io/crates/librespot)
 
 Current maintainers are [listed on GitHub](https://github.com/orgs/librespot-org/people).
+> **Note**: This is a patched version of librespot that adds the `--ignore-volume` flag. When enabled, this flag makes librespot output audio at 100% volume while still passing through Spotify Connect volume events. This is useful when you want to handle volume control through a separate mixer downstream.
+
 
 # librespot
 *librespot* is an open source client library for Spotify. It enables applications to use Spotify's service to control and play music via various backends, and to act as a Spotify Connect receiver. It is an alternative to the official and [now deprecated](https://pyspotify.mopidy.com/en/latest/#libspotify-s-deprecation) closed-source `libspotify`. Additionally, it will provide extra features which are not available in the official library.
